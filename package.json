@@ -1,0 +1,20 @@
+{
+  "name": "unif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "richard luo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.4.2",
+    "express": "^4.5.1",
+    "googleapis": "^19.0.0",
+    "method-override": "~2.0.2",
+    "morgan": "*",
+    "angular-flash-alert": "~2.4.0"
+
+  }
+}
