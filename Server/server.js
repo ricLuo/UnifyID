@@ -26,7 +26,8 @@ var port = process.env.PORT || 8080;
 // app.use(express.static('./public'));
 var static_path = path.join(__dirname, './public');
 console.log(static_path);
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, './app')));
 
 
 // HTTP request logger middleware for node.js

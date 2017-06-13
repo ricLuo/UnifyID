@@ -1,15 +1,6 @@
 var Main = require('../api/main.js');
 var path = require('path');
 
-function get(res){
-  Message.find(function(err, message){
-      if(err){
-        res.send(err);
-      }
-      res.json(message);
-  });
-};
-
 options = {
     secure: true, // Make the request secure
     num: 99,      // Get 10 integers
@@ -28,10 +19,9 @@ function randomCallback(integers){
 
 Main.generateIntegers(randomCallback, options);
 
+
+
 module.exports = function(app){
-
-
-
 
 
 // ---------------------------send html file

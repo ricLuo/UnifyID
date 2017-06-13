@@ -15,15 +15,24 @@
   <link href="../libs/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- <link href="login.html" type="text/html"> -->
   <!-- jQuery library -->
-  <script src="../libs/jquery-3.2.1.js"></script>
-
-  <script src="../libs/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+  <script src="libs/jquery-3.2.1.js"></script>
+  <script src="libs/angular/angular.js"></script>
+  <script src="libs/angular-route/angular-route.js"></script>
+  <script src="libs/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+  <script src="app/js/app.js"></script>
 </head>
 
-<body>
-  <div>
-    <ul>
-      <li>
+<body ng-app="app">
+  <div ng-controller="generate">
+    <button class="btn" ng-click="generate()">generate integer</button>
+    <div ng-if="{{loaded}}">
+      <ul>
+        <li ng-repeat="color in colors">
+          <button style="background-color:rgb({{color[0],color[1],color[2]}})"></button>
+        </li>
+      </ul>
+    </div>
+  </div>
 
 
 </body>
